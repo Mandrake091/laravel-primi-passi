@@ -40,7 +40,7 @@
                     </button>
                 </a>
             </div>
-            <div class="columns-4 lg:columns-8 gap-8 gap-y-5 flex lg:block flex-wrap justify-around">
+            <div class="columns-4 lg:columns-8 gap-8 gap-y-5 flex lg:block mx-auto flex-wrap justify-center">
                 @foreach($images as $image)
                 <img class="hover:scale-105 ease-in duration-300 rounded" src="{{$image}}" alt="">
                 @endforeach
