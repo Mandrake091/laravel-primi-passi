@@ -1,6 +1,6 @@
-<?php
+<script src="https://cdn.tailwindcss.com"></script>
 
-use Illuminate\Support\Facades\Route;
+<?php use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home-page');
-})->name('home-page');
+        return view('home-page');
+    }
+)->name('home-page');
 
 Route::get('/other-page', function () {
-    return view('other-page');
-})->name('other-page');
+        return view('other-page');
+    }
+)->name('other-page');

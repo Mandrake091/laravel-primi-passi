@@ -8,9 +8,18 @@
     <title>Other page</title>
 </head>
 
+
 <body>
-    <h1>Ciao!</h1>
-    <button><a href="{{route("home-page")}}">Torna alla home page</a></button>
+    <main class="flex justify-center mx-auto text-center">
+        <div>
+            <h1 class="text-5xl">Ciao!</h1>
+            <a href="{{route("home-page")}}"><button
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Torna alla home page
+                </button>
+            </a>
+        </div>
+    </main>
 </body>
 
 </html>

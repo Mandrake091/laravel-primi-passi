@@ -8,14 +8,10 @@
     <title>Laravel</title>
 </head>
 
-<body class="bg-gray-900">
-    <header>
-        <div class="md:container mx-auto">
-            <div class="columns-6  bg-orange-700 text-center">
-                <div class="bg-yellow-700 tracking-wider">
-                    <h1>Ciao!</h1>
-                    <p>come stai?</p>
-                </div>
+<body class="bg-white dark:bg-slate-800 dark:text-white">
+    <header class="sticky top-0 z-40 w-full backdrop-blur opacity-90 flex-none">
+        <div class="">
+            <div class="bg-orange-900 text-center flex columns-6 w-full justify-between">
                 <div class="bg-red-700">
                     <h1>Ciao!</h1>
                     <p>come stai?</p>
@@ -32,35 +28,37 @@
                     <h1>Ciao!</h1>
                     <p>come stai?</p>
                 </div>
-                <div class="bg-violet-700">
-                    <h1>Ciao!</h1>
-                    <p>come stai?</p>
-                </div>
             </div>
         </div>
     </header>
-    <main>
-        <div class="container flex-row mx-auto">
-            <div class="columns-6 flex flex-wrap justify-around">
-                <div class="text-center">
-                    <img src="https://picsum.photos/200/300" alt="">
+    <main class="font-sans">
+        <div class="container flex-row mx-auto pt-4">
+            <div class="text-center m-4">
+                <a href="{{route("other-page")}}">
                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        <a href="{{route("other-page")}}">Premi</a>
+                        Premi
                     </button>
-                </div>
-                <img src="https://picsum.photos/200/300" alt="">
-                <img src="https://picsum.photos/200/300" alt="">
-                <img src="https://picsum.photos/200/300" alt="">
-                <img src="https://picsum.photos/200/300" alt="">
-                <img src="https://picsum.photos/200/300" alt="">
-                <img src="https://picsum.photos/200/300" alt="">
-                <img src="https://picsum.photos/200/300" alt="">
-                <img src="https://picsum.photos/200/300" alt="">
+                </a>
+            </div>
+            <div class="columns-4 lg:columns-8 gap-8 gap-y-5 flex lg:block flex-wrap justify-around">
+                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300" alt="">
+                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300?random=1"
+                    alt="">
+                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300?random=2"
+                    alt="">
+                <img class="hover:scale-105 ease-in duration-300 rounded gap-y-5"
+                    src="https://picsum.photos/200/300?random=3" alt="">
+                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300?random=4"
+                    alt="">
+                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300?random=5"
+                    alt="">
+                <img class="hover:scale-105 ease-in duration-300 rounded" src=" https://picsum.photos/200/300?random=6"
+                    alt="">
+                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300?random=7"
+                    alt="">
             </div>
         </div>
     </main>
-
-
 </body>
 
 </html>
