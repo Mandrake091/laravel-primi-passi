@@ -41,21 +41,9 @@
                 </a>
             </div>
             <div class="columns-4 lg:columns-8 gap-8 gap-y-5 flex lg:block flex-wrap justify-around">
-                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300" alt="">
-                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300?random=1"
-                    alt="">
-                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300?random=2"
-                    alt="">
-                <img class="hover:scale-105 ease-in duration-300 rounded gap-y-5"
-                    src="https://picsum.photos/200/300?random=3" alt="">
-                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300?random=4"
-                    alt="">
-                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300?random=5"
-                    alt="">
-                <img class="hover:scale-105 ease-in duration-300 rounded" src=" https://picsum.photos/200/300?random=6"
-                    alt="">
-                <img class="hover:scale-105 ease-in duration-300 rounded" src="https://picsum.photos/200/300?random=7"
-                    alt="">
+                @foreach($images as $image)
+                <img class="hover:scale-105 ease-in duration-300 rounded" src="{{$image}}" alt="">
+                @endforeach
             </div>
         </div>
     </main>
